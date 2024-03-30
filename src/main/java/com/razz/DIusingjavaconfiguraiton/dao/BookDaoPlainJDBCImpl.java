@@ -1,11 +1,7 @@
 package com.razz.DIusingjavaconfiguraiton.dao;
 
-import com.razz.DIusingjavaconfiguraiton.domain.Book;
 import com.razz.DIusingjavaconfiguraiton.dto.BookDTO;
 import com.razz.DIusingjavaconfiguraiton.utils.JDBCConn;
-import com.razz.DIusingjavaconfiguraiton.utils.LoadBookDetails;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import java.sql.Connection;
@@ -15,7 +11,7 @@ import java.sql.SQLException;
 import java.util.*;
 
 @Component(value = "bookDao")
-public class BookDaoImpl implements BookDao {
+public class BookDaoPlainJDBCImpl implements BookDao {
 
     private  Connection conn = null;
     private PreparedStatement preparedStatement = null;
