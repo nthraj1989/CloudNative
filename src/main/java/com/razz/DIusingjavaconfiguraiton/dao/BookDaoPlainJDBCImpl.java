@@ -10,7 +10,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.*;
 
-@Component(value = "bookDao")
+@Component(value = "bookDao1")
 public class BookDaoPlainJDBCImpl implements BookDao {
 
     private  Connection conn = null;

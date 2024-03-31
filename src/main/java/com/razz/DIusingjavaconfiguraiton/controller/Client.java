@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import java.util.List;
 
 
 public class Client {
@@ -56,7 +57,20 @@ public class Client {
 }
         * */
 
-        bookService.deleteBook(2);
+        // bookService.deleteBook(2);
+
+//        List<BookDTO> book = bookService.getAllBooks();
+//        log.info("{}", book);
+
+//         String message = bookService.addBook(new BookDTO("ISBN8888", "Micro", "action", 5000));
+//         String message2 = bookService.addBook(new BookDTO("ISBN8888", "ABC", "action", 5003));
+//         String message3 = bookService.addBook(new BookDTO("ISBNM343", "cde", "action", 50022));
+//         String message4 = bookService.addBook(new BookDTO("ISBN0909", "EFG", "action", 5011));
+//         log.info("Updated {} record",message);
+          //String message  = bookService.updateBook (3,new BookDTO("ISBN6512", "Spring", "Rod jon", 0));
+          // log.info("{}",message);
+
+          bookService.deleteBook(2);
 
     }
 }
