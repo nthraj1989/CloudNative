@@ -1,6 +1,5 @@
 package com.razz.DIusingjavaconfiguraiton.dao;
 
-import com.razz.DIusingjavaconfiguraiton.domain.Book;
 import com.razz.DIusingjavaconfiguraiton.dto.BookDTO;
 
 import java.util.List;
